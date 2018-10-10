@@ -271,7 +271,7 @@ img {
 }
 .page-header {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     background: url(img/bg1.png) 200px 0 / cover no-repeat;
 }
 .custom-menu {
@@ -293,7 +293,7 @@ img {
     transition: color .4s;
 }
 .navbar .custom-menu .nav-link:hover {
-    color: #FF5F39;
+    color: #BDBDBD;
 }
 .nav-item {
     margin-right: 20px;
@@ -302,27 +302,7 @@ img {
     display: flex;
 }
 .social-link {
-    margin-right: 15px;
-    width: 35px;
-    height: 35px;
-}
-.lin-link {
-    background: url(img/lin.png) center / contain no-repeat;
-}
-.fb-link {
-    background: url(img/fb.png) center / contain no-repeat;
-}
-.vk-link {
-    background: url(img/vk.png) center / contain no-repeat;
-}
-.footer-tw-link {
-    background: url(img/footer-tw.png) center / contain no-repeat;
-}
-.footer-fb-link {
-    background: url(img/footer-fb.png) center / contain no-repeat;
-}
-.footer-vk-link {
-    background: url(img/footer-vk.png) center / contain no-repeat;
+    margin-right: 0;
 }
 .main-heading {
 
@@ -393,6 +373,9 @@ img {
 .subscribe-btn:hover {
     background: linear-gradient(180deg, #FF5F39 2.09%,  #FF9400 96.83%);
 }
+.teaching {
+    padding-bottom: 300px;
+}
 .teaching,
 .needs {
     background: url(img/bg2.png) right top / 600px  no-repeat;
@@ -401,13 +384,15 @@ img {
 
 }
 .section-img {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    margin-left: -25px;
 }
 .section-text {
 
 }
 .reality {
-    margin-bottom: 100px;
+    margin-top: -100px;
+    padding-bottom: 300px;
     background: url(img/bg3.png) left -80px / 600px  no-repeat;
 }
 .section-bg-img {
@@ -415,11 +400,13 @@ img {
     top: 100px;
 }
 .needs {
-    margin-bottom: 300px;
+    margin-top: -100px;
+    padding-bottom: 300px;
 }
 .work-order {
+    margin-top: -100px;
     padding-top: 160px;
-    padding-bottom: 200px;
+    padding-bottom: 125px;
     background: url(img/bg4.png) right -160px / cover no-repeat;
 
 }
@@ -446,7 +433,51 @@ img {
     margin-bottom: 25px;
     color: #FFFFFF;
 }
-
+@-webkit-keyframes float {
+    0% {
+        -webkit-transform: translatey(0px);
+                transform: translatey(0px);
+    }
+    50% {
+        -webkit-transform: translatey(-15px);
+                transform: translatey(-15px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+                transform: translatey(0px);
+    }
+}
+@keyframes float {
+    0% {
+        -webkit-transform: translatey(0px);
+                transform: translatey(0px);
+    }
+    50% {
+        -webkit-transform: translatey(-15px);
+                transform: translatey(-15px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+                transform: translatey(0px);
+    }
+}
+svg,
+svg * {
+    overflow: visible
+}
+svg rect,
+.page-header svg g[filter='url(#filter1_d)'],
+.page-header svg g[filter='url(#filter4_d)'],
+.page-header svg g[filter='url(#filter6_d)'],
+.page-header svg g[filter='url(#filter0_d)'],
+.page-header svg g[filter='url(#filter5_d)'],
+.page-header svg g[filter='url(#filter2_d)'],
+svg g[id='Group_15'],
+svg g[id='Group_14'],
+svg g[id='Group_30'] {
+    -webkit-animation: float 6s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
+}
 .step-text,
 .direction-text {
     font-family: 'Noto Sans', sans-serif;
@@ -460,7 +491,8 @@ img {
     color: #FFFFFF;
 }
 .directions {
-    margin-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 .direction-heading {
     margin-bottom: 20px;
@@ -544,12 +576,13 @@ img {
     margin: 50px auto 25px;
 }
 .more {
-    margin-bottom: 150px;
+    padding-bottom: 300px;
     background: url(img/bg2.png) right 80px / 600px  no-repeat;
 }
 .enroll-study {
+    margin-top: -100px;
     padding-top: 130px;
-    padding-bottom: 200px;
+    padding-bottom: 70px;
     background: url(img/bg5.png) left -160px / cover no-repeat;
 }
 .desc-heading,
@@ -570,8 +603,8 @@ img {
 .enroll-social {
     margin-top: 40px;
 }
-.enroll-social .social-link {
-    margin-right: 35px;
+.enroll-social .social-link:first-child {
+    padding-left: 0;
 }
 .enroll-input,
 .selectric,
@@ -635,6 +668,7 @@ img {
     font-weight: normal;
 }
 .ready {
+    margin-top: 200px;
     margin-bottom: 100px;
 }
 .ready-form {
@@ -662,6 +696,7 @@ img {
     line-height: normal;
     font-size: 18px;
     color: #9C9C9C;
+    transition: color .4s;
 
 }
 .footer-menu-link:hover {
@@ -672,6 +707,19 @@ img {
     align-self: center;
     margin-bottom: 50px;
 }
+.footer-social .social-link svg path {
+    fill: #9C9C9C;
+}
+.footer-menu-link:hover {
+    color: #333333;
+}
+svg path {
+    transition: fill .4s;
+}
+.footer-social .social-link:hover svg path {
+   fill: #333333;
+}
+
 .madein-text {
     font-family: 'Roboto',sans-serif;
     font-style: normal;
@@ -687,13 +735,19 @@ img {
 .modal-body {
     padding: 0;
 }
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
 .modal-content .enroll-study {
     padding-bottom: 55px;
 }
 .modal-close {
     align-self: flex-end;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
+    color: #fff;
+    opacity: 1;
 }
 @media screen and (max-width: 1199px) {
     .page-header,
@@ -738,8 +792,19 @@ img {
     .work-order,
     .enroll-study,
     .ready {
-        margin: 0;
         padding: 30px 0;
+    }
+    .teaching {
+        margin-top: 100px;
+        padding-bottom: 200px;
+    }
+    .work-order,
+    .directions,
+    .ready {
+        margin-top: 0;
+    }
+    .reality {
+        padding-bottom: 200px;
     }
     .needs,
     .directions {
@@ -765,9 +830,6 @@ img {
     .modal-content {
         background: linear-gradient(139.65deg, #2964FF 44.59%, #002FAA 96.17%);
     }
-    .modal-close {
-        color: #fff;
-    }
 
 }
 @media screen and (max-width: 991px) {
@@ -791,8 +853,9 @@ img {
     .section-bg-img {
         top: 0;
     }
-    section .section-heading {
-
+    .teaching {
+        margin-top: 0;
+        padding-bottom: 0;
     }
     .teaching .section-text-block {
         margin-top: -50px;
@@ -804,11 +867,22 @@ img {
         margin-top: 25px;
     }
     .reality {
-        margin-bottom: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 0;
+    }
+    .needs,
+    .more {
+        margin: 50px 0;
     }
     .more {
-        margin-bottom: 0;
         padding-bottom: 30px;
+    }
+    .ready {
+        margin-bottom: 50px;
+    }
+    .enroll-study {
+        margin-top: 0;
     }
     .course-desc {
         text-align: center;
@@ -830,6 +904,13 @@ img {
     }
     .footer-menu-link {
         margin: 0 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .modal-close {
+        position: absolute;
+        top: -30px;
+        right: 0;
     }
 }
 @media screen and (max-width: 767px) {
@@ -879,6 +960,13 @@ img {
     }
     .section-heading {
         font-size: 28px;
+    }
+    .needs {
+        margin-bottom: 0;
+    }
+    .more,
+    .ready {
+        margin: 0;
     }
 
 }

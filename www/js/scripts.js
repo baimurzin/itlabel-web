@@ -19,4 +19,28 @@ $(document).ready(function(){
         }, 600);
     });
     $('input[name="phone"]').inputmask({"mask": "+7(999) 999-9999"});
+
+    function addData() {
+        if($(window).width() > 768) {
+            console.log(1)
+            $('.hover-direction').each(function(){
+                console.log($(this))
+                $(this).attr('data-toggle', 'modal').attr('data-target', '#modal')
+            })
+        }
+    }
+    addData();
+
+    $(window).resize(function(){
+        addData();
+    });
+
+    $('.footer-logo').hover(function(){
+        $(this).attr('src', 'img/logo.png')
+    }, function(){
+        $(this).attr('src', 'img/footer-logo.png')
+
+    })
+
+
 })

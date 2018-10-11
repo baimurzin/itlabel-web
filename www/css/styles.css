@@ -182,21 +182,78 @@ img {
         transform: translatey(0px);
     }
 }
-svg,
-svg * {
-    overflow: visible
+@keyframes float2 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-30px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
-svg rect,
-.page-header svg g[filter='url(#filter1_d)'],
-.page-header svg g[filter='url(#filter4_d)'],
-.page-header svg g[filter='url(#filter6_d)'],
-.page-header svg g[filter='url(#filter0_d)'],
-.page-header svg g[filter='url(#filter5_d)'],
-.page-header svg g[filter='url(#filter2_d)'],
-svg g[id='Group_15'],
-svg g[id='Group_14'],
-svg g[id='Group_30'] {
+@keyframes float3 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+@keyframes float4 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+@keyframes float5 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-30px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+@keyframes float6 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+svg .g-php {
     animation: float 6s ease-in-out infinite;
+}
+svg .g-python {
+    animation: float2 4s linear infinite;
+}
+svg .g-java {
+    animation: float3 3s ease-out infinite;
+}
+svg .g-js {
+    animation: float3 3s ease-in-out infinite;
+}
+svg .g-andr {
+    animation: float5 4s ease-out infinite;
+}
+svg .g-ios {
+    animation: float6 2s ease-in infinite;
 }
 .step-text,
 .direction-text {
